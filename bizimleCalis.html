@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barrio&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header style="position: sticky; top: 0; background-color: white">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div>
+          <a class="barrio-regular" style="font-size: 60px">BrAnd</a>
+        </div>
+        <div style="padding-top: 10px">
+          <button>
+            <a class="buttonText quicksand-simple" href="index.html">home</a>
+          </button>
+          <button>
+            <a class="buttonText quicksand-simple" href="icecek.html">içecek</a>
+          </button>
+          <button>
+            <a class="buttonText quicksand-simple" href="tatli.html">tatlı</a>
+          </button>
+          <button>
+            <a class="buttonText quicksand-simple" href="kahvalti.html"
+              >kahvaltı</a
+            >
+          </button>
+          <button>
+            <a
+              class="buttonText quicksand-simple headerSelectedButton"
+              
+              href="bizimleCalis.html"
+              >bizimle çalış</a
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- flexbox-grid yapısı ogren-->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 70px 0px 45px 0px;
+      "
+    >
+      <div1
+        class="quicksand-simple div-"
+        style=" padding-top: 90px"
+      >
+        <!-- tabloyu içeren alan -->
+        <div>
+          <table>
+            <tr>
+              <th style="border-top-left-radius: 10px">
+                Başvurmak istediğiniz Alan
+              </th>
+              <th style="border-top-right-radius: 10px"></th>
+            </tr>
+            <tr>
+              <td>Mutfak</td>
+              <td>
+                <input type="checkbox" />
+              </td>
+            </tr>
+            <tr>
+              <td>Servis</td>
+              <td>
+                <input type="checkbox" />
+              </td>
+            </tr>
+            <tr>
+              <td>Temizlik</td>
+              <td>
+                <input type="checkbox" />
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom-left-radius: 10px">Tezgah</td>
+              <td style="border-bottom-right-radius: 10px">
+                <input type="checkbox" />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div1>
+
+      <!-- tablo ve formu içeren alan -->
+
+      <div2 class="div-">
+        <div
+          class="barrio-regular"
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 60px;
+            text-align: center;
+          "
+        >
+          <p>
+            BİZİMLE <br />
+            <span class="switch">ÇALIŞMAK</span> <br />
+            İSTER <br />
+            MİSİN
+          </p>
+        </div>
+      </div2>
+
+      <div3 class="quicksand-simple div-">
+        <!-- formu içeren alan -->
+        <!-- label kullandım ki kullanıcı, alan yerine yazıya bassa da alana basmış gibi olsun -->
+        <div class="blueContainer">
+          <p style="text-align: center">
+            Sizinle iletişime geçebilmemiz için aşağıdaki bilgileri doldurunuz.
+          </p>
+          <form action="">
+            <label for="isim">Ad : </label>
+            <br />
+            <input
+              class="quicksand-simple"
+              type="text"
+              name="isim"
+              id="isim"
+              placeholder="Elle"
+            />
+
+            <br /><br />
+
+            <label for="soyisim">Soyad :</label>
+            <br />
+            <input
+              class="quicksand-simple"
+              type="text"
+              name="soyisim"
+              id="soyisim"
+              placeholder="Woods"
+            />
+
+            <br /><br />
+
+            <label for="eposta">E-posta :</label>
+            <br />
+            <input
+              class="quicksand-simple"
+              type="email"
+              name="eposta"
+              id="eposta"
+              placeholder="ellewoods@gmail.com"
+            />
+
+            <br /><br />
+
+            <label for="telefon">Telefon :</label>
+            <br />
+            <input
+              class="quicksand-simple"
+              type="tel"
+              name="telefon"
+              id="telefon"
+              placeholder="555-555-555"
+            />
+
+            <br /><br />
+
+            <label for="cinsiyet">Cinsiyet :</label>
+            <br />
+            <label for="kadin">Kadın</label>
+            <input type="radio" name="cinsiyet" id="kadin" />
+            <label for="erkek">Erkek</label>
+            <input type="radio" name="cinsiyet" id="erkek" />
+
+            <br /><br />
+
+            <br /><br />
+          </form>
+        </div>
+      </div3>
+    </div>
+
+    <div>
+      <p
+        class="quicksand-simple"
+        style="
+          text-align: center;
+          column-count: 3;
+          column-gap: 50px;
+        "
+      >
+        <span class="highlight">MUTFAK</span><br /><br />
+        Kafemizin mutfak ekibine katılacak, yenilikçi ve tutkulu çalışma
+        arkadaşları arıyoruz.<br /><br />
+        <span class="highlight2">Temel Gereksinimler:</span>
+        <br /><br />
+        - En az 2 yıl profesyonel mutfak deneyimi<br />
+        - Tercihen pastane veya kafede çalışmış olmak<br />
+        - Gıda güvenliği ve hijyen sertifikası<br />
+        - Vardiyalı çalışma sistemine uyum sağlayabilme<br /><br />
+        <span class="highlight2">Teknik Beceriler:</span><br /><br />
+        - Kahvaltı menüsü hazırlama konusunda deneyim<br />
+        - Tatlı ve pasta yapımında ustalık<br />
+        - Soğuk sandviç ve salata hazırlama tecrübesi<br />
+        - Mutfak ekipmanlarını etkin kullanabilme<br />
+        - Stok takibi ve maliyet kontrolü yapabilme<br /><br />
+
+        <span class="highlight2">Kişisel Özellikler:</span><br /><br />
+        - Yoğun iş temposuna dayanıklılık<br />
+        - Detaylara özen gösterme<br />
+        - Takım çalışmasına yatkınlık<br />
+        - Yeniliklere ve gelişime açık olma<br />
+        - Problem çözme becerisi<br /><br />
+
+        <span class="highlight2"> Sunduğumuz İmkanlar:</span><br /><br />
+        - Rekabetçi maaş paketi<br />
+        - SGK ve yemek<br />
+        - Kariyer gelişim fırsatları<br />
+        - Pozitif çalışma ortamı <br /><br /><big
+          ><b><span class="highlight">SERVİS</span></b></big
+        ><br /><br />
+        Müşteri deneyimini en üst seviyede tutacak, enerjik servis ekibi üyeleri
+        arıyoruz.<br /><br /><br /><br />
+        <span class="highlight2">Aranan Nitelikler:</span><br /><br />
+        - Tercihen turizm ve otelcilik mezunu<br />
+        - En az 1 yıl servis deneyimi<br />
+        - Düzgün diksiyon ve etkili iletişim becerileri<br />
+        - Temel düzeyde İngilizce<br />
+        - Adisyon ve sipariş takip sistemleri kullanım tecrübesi<br /><br />
+
+        <span class="highlight2">Sorumluluk Alanları:</span><br /><br />
+        - Masa düzeni ve servis hazırlığı<br />
+        - Sipariş alma ve servis yapma<br />
+        - Hijyen standartlarını koruma<br />
+        - Müşteri memnuniyetini takip etme<br />
+        - Kasa işlemlerine destek<br /><br />
+
+        <span class="highlight2">Çalışma Koşulları:</span><br /><br />
+        - Tam zamanlı çalışma<br />
+        - Vardiyalı sistem<br />
+        - Hafta sonu çalışma<br />
+        - Sosyal haklar paketi <br /><br /><big
+          ><b><span class="highlight">TEMİZLİK</span></b></big
+        ><br /><br />
+
+        Kafemizin temizlik standartlarını en üst düzeyde tutacak özenli çalışma
+        arkadaşları arayışımız devam ediyor. <br /><br />
+        <span class="highlight2">İş Tanımı: </span> <br /><br />
+        - Kafenin genel temizlik ve düzeninin sağlanması<br />
+
+        - Mutfak ve servis alanlarının hijyenik tutulması<br />
+
+        - Çöp toplama ve atık yönetimi<br />
+
+        - Temizlik malzemelerinin takibi ve temini<br /><br />
+
+        <span class="highlight2">Gereken Özellikler:</span><br /><br />
+        - Benzer pozisyonda en az 1 yıl deneyim<br />
+        - Temizlik malzemeleri ve ekipmanları kullanım bilgisi<br />
+        - Hijyen kurallarına hakimiyet<br />
+        - Sistemli ve düzenli çalışma alışkanlığı<br />
+        - Esnek çalışma saatlerine uyum<br /><br />
+
+        <span class="highlight2">Ekstra Avantajlar:</span><br /><br />
+        - Endüstriyel temizlik sertifikası<br />
+        - HACCP bilgisi<br />
+        - İlk yardım sertifikası <br /><br /><br /><big
+          ><b><span class="highlight">TEZGAH</span></b></big
+        ><br /><br />
+        Profesyonel barista ve tezgah görevlisi pozisyonları için deneyimli
+        adaylar arıyoruz.
+        <br /><br />
+        <span class="highlight2">Barista Gereksinimleri:</span><br /><br />
+        - En az 2 yıl barista deneyimi<br />
+        - Specialty kahve hazırlama sertifikası<br />
+        - Espresso bazlı içecekler konusunda uzmanlık<br />
+        - Latte art yapabilme<br />
+        - Kahve ekipmanları bakımı ve temizliği bilgisi<br /><br />
+
+        <span class="highlight2">Tezgah Sorumlulukları:</span><br /><br />
+        - Müşteri karşılama ve sipariş alma<br />
+        - Kasa ve POS cihazı kullanımı<br />
+        - Tezgah düzeni ve temizliği<br />
+        - Stok takibi ve sipariş verme<br />
+        - Soğuk içecek hazırlama<br /><br />
+
+        <span class="highlight2">Beklenen Yetkinlikler:</span><br /><br />
+        - Güler yüzlü ve profesyonel iletişim<br />
+        - Hızlı ve çözüm odaklı çalışma<br />
+        - Temel İngilizce bilgisi<br />
+        - Hijyen ve gıda güvenliği bilinci<br />
+        - Esnek çalışma saatlerine uyum<br /><br />
+
+        <span class="highlight2">Kariyer Fırsatları:</span><br /><br />
+        - Düzenli barista eğitimleri<br />
+        - Kahve tadım etkinliklerine katılım<br />
+        - Yönetici pozisyonuna yükselme imkanı<br />
+        - Performansa dayalı prim sistemi
+      </p>
+    </div>
+  </body>
+
+</html>

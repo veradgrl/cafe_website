@@ -1,0 +1,165 @@
+
+/* button style  */
+button {
+  border: none;
+  background-color: white;
+}
+
+.buttonText {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  padding: 0px 10px;
+}
+
+button:hover{
+  transform: scale(1.12);
+}
+/* ---------------------------------- */
+
+/* header style  */
+.headerSelectedButton{
+  background-color: #d84091;
+  color: white;
+}
+.headerKahvalti{
+  background-color: #ef5454;
+  color: white;
+}
+.headerIcecek{
+  background-color: #7d6245;
+  color: white;
+}
+.headerTatli{
+  background-color: #900000;
+  color: white;
+}
+/* ---------------------------------- */
+
+
+/* font-families  */
+.barrio-regular {
+  font-family: "Barrio", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sour-gummy-simple {
+  font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.quicksand-simple {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ---------------------------------- */
+
+
+/* table styles  */
+table {
+  background-color: #d84091;
+  border-radius: 12px;
+}
+
+table.kahvalti {
+  background-color: #ef5454;
+  border-radius: 12px;
+}
+table.icecek {
+  background-color: #7d6245;
+  border-radius: 12px;
+}
+table.tatli {
+  background-color: #900000;
+  border-radius: 12px;
+}
+
+tr {
+  background-color: white;
+}
+
+th {
+  padding:7px;
+}
+
+td {
+  padding: 7px;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+/* ---------------------------------- */
+
+
+.blueContainer {
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  
+  border: solid 2px #d84091;
+  width: 250px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div- {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* text styles  */
+.highlight {
+  font-family: "Barrio", serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: #d84091;
+}
+.highlightCoffee {
+  font-family: "Barrio", serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: #7d6245;
+}
+.highlightBreakfast {
+  font-family: "Barrio", serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ef5454;
+}
+.highlightTatli {
+  font-family: "Barrio", serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: #900000;
+}
+
+.highlight2 {
+  color: #63b890 ;
+  font-weight: 700;
+}
+
+.switch{
+  background-color: #d84091;
+  color: white;
+  font-size: 80px;
+}
+/* ---------------------------------- */
+
+
+

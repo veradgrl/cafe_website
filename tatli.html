@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barrio&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+
+    <header header style="position: sticky; top: 0; background-color: white">
+        <div style="display: flex; justify-content: space-between;align-items: center;">
+          <div>
+            <a class="barrio-regular" style="font-size: 60px">BrAnd</a>
+          </div>
+          <div style="padding-top: 10px">
+            <button>
+              <a class="buttonText quicksand-simple" href="index.html">home</a>
+            </button>
+            <button>
+              <a class="buttonText quicksand-simple" href="icecek.html">içecek</a>
+            </button>
+            <button>
+              <a class="buttonText quicksand-simple headerTatli" href="tatli.html">tatlı</a>
+            </button>
+            <button>
+              <a class="buttonText quicksand-simple" href="kahvalti.html"
+                >kahvaltı</a
+              >
+            </button>
+            <button>
+              <a class="buttonText quicksand-simple" href="bizimleCalis.html"
+                >bizimle çalış</a
+              >
+            </button>
+          </div>
+        </div>
+      </header>
+
+      
+      <div
+      style="
+        display: grid;
+        grid-template-rows: repeat(3, 1fr) ;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 20px 0px -50px 0px;
+      "
+      class="quicksand-simple"
+    >
+
+    <!-- coffee introduction  -->
+    <div1  style="grid-row: 1/3;grid-column: 1/ 5; padding-left: 20px; padding-top: 90px; " >
+        <div class="barrio-regular" style="font-size: xx-large; " >
+        <p style="font-size: larger;" >TATLILAR :</p>
+        <p class="highlightTatli" style="padding-left: 50px;" > orman <br>meyveli pasta</p>
+        
+        </div>
+        <div style="width: 400px;">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum odit reprehenderit eum ea, quisquam dolores ex dolor? Accusantium illo vel culpa temporibus est, fugit quis?</p>
+        </div>
+    </div1>
+
+    <!-- coffee image  -->
+    <div2  style="grid-row: 1/3;grid-column: 5/ 9; display: flex; justify-content: center;padding-top: 100px;">
+        <div style="position: relative; width: 250px; height: 125px; box-shadow: 0px 0px 100px 80px rgb(71, 51, 28); border-radius: 100%; top: 110px;"></div>
+        <div style="position: absolute;"><img style="height: 300px;" src="/img/tatli/48F7AAF5-54E5-4054-A780-602173ABDC26.png" alt=""></div>
+        
+    </div2>
+
+
+    <!-- kahve türleri, ekstralar ve ücretler hakkında tablo  -->
+    <div3  style="grid-row: 1/3; grid-column: 9/ 13;margin-bottom: 50px;padding-top: 40px; ; display: flex; justify-content: end; padding-right: 20px; ">
+
+        <table class="tatli" style="font-size: 15px; width:400px; " >
+           <tr>
+            <th style="border-top-left-radius: 10px">Kahve türleri</th>
+            <th>Kahve Ücretleri</th>
+            <th>Ekstralar</th>
+            <th style="border-top-right-radius: 10px">Ekstra Ücretleri</th>
+           </tr>
+
+           <tr>
+            <td rowspan="2">Pasta</td>
+            <td rowspan="2">100</td>
+            <td rowspan="1">karamel sosu</td>
+            <td rowspan="1">2</td>
+           </tr>
+
+           <tr>
+            <td rowspan="1">çikolata sosu</td>
+            <td rowspan="1">1</td>
+           </tr>
+
+           <tr>
+            <td rowspan="2">Cheesecake</td>
+            <td rowspan="2">100</td>
+            <td rowspan="1">çilek sosu</td>
+            <td rowspan="1">2</td>
+           </tr>
+
+           <tr>
+            <td rowspan="1">beyaz çikolata sosu</td>
+            <td rowspan="1">1</td>
+           </tr>
+
+           <tr>
+            <td rowspan="2">Pankek</td>
+            <td rowspan="2">100</td>
+            <td rowspan="1">ekstra krema</td>
+            <td rowspan="1">2</td>
+           </tr>
+
+           <tr>
+            <td rowspan="1">lotus sosu</td>
+            <td rowspan="1">1</td>
+           </tr>
+
+           <tr>
+            <td rowspan="2">Kruvasan</td>
+            <td rowspan="2">100</td>
+            <td rowspan="1">bal</td>
+            <td rowspan="1">2</td>
+           </tr>
+
+           <tr>
+            <td rowspan="1">muz</td>
+            <td rowspan="1">1</td>
+           </tr>
+
+            <td style="border-bottom-left-radius: 10px" rowspan="2">Magnolya</td>
+            <td rowspan="2">100</td>
+            <td rowspan="1">çilek</td>
+            <td rowspan="1">2</td>
+           </tr>
+
+           <tr>
+            <td rowspan="1">orman meyveleri</td>
+            <td style="border-bottom-right-radius: 10px" rowspan="1">1</td>
+           </tr>
+           
+        </table>
+
+    </div3>
+
+    <!-- div 4  -->
+    <div4 class="div-" style="grid-row: 3/4 ;grid-column: 1/ 4 ; margin-top: 0;  ">
+        
+        <div>
+            <img style="height: 170px;" src="/img/tatli/5B53ED39-CAA0-44F0-A59A-10B3BF313779.png" alt="">
+        </div>
+    </div4>
+
+    <!-- div 5  -->
+    <div5 class="div-"  style=" grid-row: 3/4 ;grid-column: 4/ 7;margin-top: 0">
+        
+        <div>
+            <img style="height: 170px;"  src="/img/tatli/FFF8278F-9E24-44AF-B163-ABC0B7E7EB36.png" alt="">
+        </div>
+    </div5>
+
+    <!-- div 6  -->
+    <div6 class="div-"  style=" grid-row: 3/4 ;grid-column: 7/ 10;margin-top: 0">
+        
+        <div>
+            <img style="height: 170px;"   src="/img/tatli/45565D43-BDC9-4696-8CB4-B36865768A3E.png" alt="">
+        </div>
+    </div6>
+
+    <!-- div 7  -->
+    <div7 class="div-"  style=" grid-row: 3/4 ;grid-column: 10/ 13;margin-top: 0">
+        
+        <div>
+            <img style="height: 170px;" src="/img/tatli/68FCE7A9-116E-4704-948B-1C858A981162.png" alt="">
+        </div>
+        
+    </div7>
+  </div>
+
+  <div>
+    <p
+    class="quicksand-simple"
+        style="
+          text-align: center;
+          column-count: 4;
+          column-gap: 50px;
+          margin-left: 25px;
+          padding-bottom: 50px;
+        ">
+        <span class="highlightTatli">CHEESECAKE</span>  <br><br>
+        Çikolata aromalı latte çeşidi. <br>
+        Üzerine süt köpüğü konularak servis edilir. <br>
+        İsteğe bağlı olarak rende çikolata ile de sipariş edebilirsiniz. (Ücrete dahildir)
+
+        <span class="highlightTatli">PANKEK</span><br><br>
+        Sütü bol kahve çeşidi. <br>
+        Espresso üzerine süt ve süt kreması eklenerek yapılır.
+        İsteğe bağlı olarak süt köpüğü ile servis edilir. <br>
+
+        <span class="highlightTatli">KRUVASAN</span><br><br>
+        Espresso kaynatma yöntemi ile hazırlanan sert bir kahve çeşidi. <br>
+        Tek servis edilir. <br>
+
+        <span class="highlightTatli">MAGNOLYA</span><br><br>
+        Eritilmiş çikolata, toz kakao, sıcak süt ve şeker içeren sıcak içecek. <br>
+        İsteğe bağlı olarak marshmallow ile süslenerek servis edilir. (Ek ücret gerektirir.)
+
+    </p>
+  </div>
+    
+</body>
+</html>
